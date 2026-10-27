@@ -46,6 +46,18 @@ Tanggal pemeriksaan: 27 Oktober 2026. Cakupan: prototipe dengan data simulasi.
 - Akses melalui landing dan navigasi bawah calon mahasiswa diperiksa. Panduan status demo pada Langkah saya tetap membuka FAQ lama.
 - Belum menggunakan AI generatif. Penyesuaian keyboard melalui Visual Viewport tersedia, tetapi keyboard Android/iOS fisik belum diuji.
 
+## Desain Perjalanan Menuju Kampus v1.4 · 28 Oktober 2026
+
+- Lapisan presentasi diperbarui melalui `presentation.js`, templat tampilan, dan `campus.css`. Tidak ada perubahan pada `model.js`, `workflow.js`, penanganan aksi `app.js`/`workflow-ui.js`, atau logika chatbot.
+- Pemeriksaan sintaks dan 27 pengujian logika tetap lulus.
+- Tindakan yang dirender pada landing, ringkasan petugas, beranda mahasiswa, dan evaluasi dibandingkan dengan versi v1.3 menggunakan data latihan yang sama; tidak ada pengenal tindakan lama yang hilang.
+- Sebanyak 16 halaman diperiksa pada lebar 320, 360, 390, 768, dan 1366 px (80 kombinasi). Seluruhnya memiliki judul dan tidak meluap horizontal pada halaman. Tabel lebar tetap dapat digulir di areanya sendiri pada laptop, dan menjadi daftar pada HP.
+- Uji browser terpisah: dua berkas contoh dikirim; identitas disetujui; dokumen kelulusan diminta perbaikan dengan alasan tidak terbaca; mahasiswa mengirim perbaikan; petugas memverifikasi. Status daftar ulang dan angka ringkasan diperbarui melalui aturan lama.
+- Ketiga kondisi beranda (perlu perbaikan, menunggu pemeriksaan, selesai) mengikuti data aktual demo. Lembar detail kasus diperiksa berada di dalam viewport HP.
+- Temuan dokumen tidak terbaca masuk ke bukti evaluasi. Rencana tindakan disimpan, dibuka kembali, diubah menjadi Berjalan, dan status tersimpan tampil pada rekomendasi.
+- Filter jalur dan rincian metrik diperiksa menghasilkan jumlah dan baris yang sama. Pilihan tahap ilustrasi landing bekerja secara terpisah dari data aplikasi.
+- Animasi singkat hanya dipakai saat pengaturan pengguna mengizinkan gerakan. Chatbot tetap tertutup sampai dipilih dan menggunakan panduan lokal.
+
 ## Batas pemeriksaan
 
 Pengujian browser memakai emulasi ukuran layar, bukan perangkat Android/iOS fisik. Perbedaan browser, keyboard virtual, kualitas jaringan nyata, serta pembaca layar masih memerlukan pemeriksaan lanjutan. Uji kapasitas adalah uji model lokal, bukan uji transaksi serentak dari beberapa perangkat. Autentikasi dan keamanan server belum tersedia pada prototipe ini.

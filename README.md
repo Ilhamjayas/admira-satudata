@@ -4,6 +4,18 @@
 
 Prototipe web responsif berbahasa Indonesia berdasarkan ADMIRA PRD v2.0, 27 Oktober 2026.
 
+## Pengembangan v1.4 · Perjalanan Menuju Kampus
+
+Pembaruan ini berfokus pada presentasi. Modul data, aturan bisnis, perhitungan, penyimpanan, unggah/verifikasi, tiket, serta jawaban chatbot tetap memakai implementasi sebelumnya.
+
+- Pembuka memakai komposisi asimetris, berkas perjalanan lima tahap, catatan pemeriksaan, dan tenggat contoh. Pilihan tiga tahap pemeriksaan hanya mengganti ilustrasi di landing; tidak mengubah pendaftaran atau data latihan.
+- Ruang mahasiswa mendahulukan status dan tindakan berikutnya, lalu perjalanan dan daftar persyaratan. Berkas identitas perjalanan dan tenggat tampil di kolom pendamping pada laptop. Warna bidang mengikuti kondisi perlu tindakan, menunggu, atau selesai.
+- Ringkasan petugas memakai angka ringkas, alur penerimaan dengan penyebut tertulis, daftar pekerjaan, serta antrean kasus dari data dan aturan yang sama.
+- Detail kasus ditampilkan sebagai panel samping pada laptop dan lembar detail pada HP. Formulir pemeriksaan, penugasan, catatan, tenggat, serta riwayat tetap tersedia.
+- Rekomendasi menonjolkan bukti data, temuan, usulan, dan evaluasi. Status yang sudah tersimpan pada rencana ditampilkan kembali tanpa mengganti aturan persetujuan atau evaluasi.
+- Palet hijau `#123E3A`, krem `#F7F5EF`, aprikot `#F2B66D`, serta coral terbatas dipertahankan. Manrope dipakai untuk antarmuka, Instrument Serif untuk pembuka dan bagian editorial.
+- Seluruh 27 pengujian logika lulus. Sebanyak 80 kombinasi halaman dan lebar layar diperiksa tanpa luapan horizontal halaman. Alur unggah → perbaikan → verifikasi → evaluasi diperiksa melalui browser.
+
 ## Pengembangan v1.3 · Chatbot mini
 
 - Tombol **Tanya ADMIRA** membuka panel kecil di pojok layar laptop; pada ruang demo di HP, buka melalui tombol **Tanya** di navigasi bawah. Halaman tetap dapat digunakan tanpa menutup panel.
