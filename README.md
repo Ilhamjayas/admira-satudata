@@ -4,16 +4,25 @@
 
 Prototipe web responsif berbahasa Indonesia berdasarkan ADMIRA PRD v2.0, 27 Oktober 2026.
 
+## Pengembangan v1.3 · Chatbot mini
+
+- Tombol **Tanya ADMIRA** membuka panel kecil di pojok layar laptop; pada ruang demo di HP, buka melalui tombol **Tanya** di navigasi bawah. Halaman tetap dapat digunakan tanpa menutup panel.
+- Jawaban otomatis memakai panduan lokal tentang ADMIRA, cara mencoba demo, dokumen, daftar ulang, bantuan, klinik, dan prodi. Pilihan pertanyaan dan tindak lanjut sederhana seperti “jelaskan lagi” tersedia.
+- Sesuai pilihan sementara, tidak memakai API key atau AI generatif. Tidak ada pesan dikirim ke layanan AI. Pertanyaan di luar panduan dijawab dengan penjelasan batas kemampuan, bukan jawaban rekaan.
+- Chatbot mini tidak membaca profil, dokumen, tiket, atau status pendaftaran. Riwayat singkat hanya di memori tab, dapat dibersihkan melalui tombol percakapan baru, dan hilang saat halaman dimuat ulang.
+- Panduan **Tanya status demo** pada Langkah saya tetap tersedia untuk mencoba FAQ yang membaca data latihan pendaftaran; fungsinya terpisah dari chatbot mini.
+- Panel diuji pada lebar 320, 360, 390, 768, dan 1366 px. Ukuran panel menyesuaikan ruang layar, dengan penyesuaian area ketik melalui Visual Viewport bila keyboard HP mengubah area terlihat.
+
 ## Pengembangan v1.2
 
 - Halaman pembuka di `/` atau `/#welcome` menjelaskan manfaat ADMIRA dan menyediakan pilihan **Coba Demo Calon Mahasiswa** serta **Coba Demo Petugas**. Tautan `/#home` tetap membuka ruang calon mahasiswa.
 - Persyaratan identitas dan kelulusan memiliki status, tenggat, catatan petugas, serta riwayat masing-masing. Pengajuan yang dikirim menunggu pemeriksaan; status resmi daftar ulang selesai hanya setelah seluruh dokumen berlaku diverifikasi.
 - Ringkasan petugas berisi enam angka yang dapat dibuka ke daftar pembentuknya. Filter tahun, jalur, prodi, dan wilayah berlaku konsisten. Jumlah orang unik berdasarkan ID orang demo dibedakan dari jumlah aplikasi; kategori yang bertumpang tindih tidak dijumlahkan.
-- **Tanya ADMIRA** adalah FAQ terstruktur yang berjalan tanpa layanan AI. Jawaban pribadi hanya membaca contoh pendaftaran Nadia. Jawaban menyertakan sumber, pembaruan, dan tindakan yang relevan; informasi yang belum tersedia tidak dikarang. Pengalihan ke petugas membuat tiket beserta ringkasan percakapan setelah pengguna mengirim formulir.
+- **Tanya status demo** adalah FAQ terstruktur pada Langkah saya yang berjalan tanpa layanan AI. Jawaban pribadi hanya membaca contoh pendaftaran Nadia. Jawaban menyertakan sumber, pembaruan, dan tindakan yang relevan; informasi yang belum tersedia tidak dikarang. Pengalihan ke petugas membuat tiket beserta ringkasan percakapan setelah pengguna mengirim formulir.
 - **Evaluasi & Rekomendasi** menghubungkan temuan, angka beserta penyebut, kelompok/proses, usulan, pelaksana, waktu tinjau, indikator, dan batas kesimpulan. Usulan dapat disimpan menjadi rencana dengan snapshot bukti dan catatan evaluasi.
 - Data latihan lama pada browser dimigrasikan tanpa menghapus tugas, tiket, atau program yang sudah dibuat. Pengiriman pengingat tetap simulasi dan tidak menghubungi penerima nyata.
 
-Untuk demonstrasi: buka landing page → pilih calon mahasiswa → kirim dua berkas contoh melalui Langkah saya → pilih petugas → periksa dokumen pada detail kasus → kembali ke calon mahasiswa. Coba Tanya ADMIRA dan pengalihan tiket, lalu simpan rekomendasi sebagai rencana tindakan.
+Untuk demonstrasi: buka landing page → coba chatbot mini Tanya ADMIRA → pilih calon mahasiswa → kirim dua berkas contoh melalui Langkah saya → pilih petugas → periksa dokumen pada detail kasus → kembali ke calon mahasiswa. Coba Tanya status demo dan pengalihan tiket, lalu simpan rekomendasi sebagai rencana tindakan.
 
 ## Menjalankan
 

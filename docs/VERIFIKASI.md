@@ -36,6 +36,16 @@ Tanggal pemeriksaan: 27 Oktober 2026. Cakupan: prototipe dengan data simulasi.
 - Browser: Ringkasan, Tindak lanjut, Analisis, dan Mutu Data diuji pada 390 × 844, 768 × 1024, serta 1366 × 900. Tidak ditemukan luapan horizontal pada halaman.
 - Tampilan laptop menggunakan empat kolom ringkasan dan navigasi samping. HP memakai satu kolom isi, ringkasan dua kolom, daftar kasus, serta navigasi bawah.
 
+## Chatbot mini v1.3 · 28 Oktober 2026
+
+- Panel Tanya ADMIRA memakai panduan lokal tanpa API key. Tidak memanggil layanan AI, membaca state pendaftaran, atau menyimpan percakapan di localStorage.
+- Sebanyak 27 pengujian logika lulus, termasuk pengenalan topik, tindak lanjut percakapan, dan batas jawaban mengenai biaya, tenggat, serta data pribadi.
+- Browser: pertanyaan bebas dan pilihan pertanyaan menghasilkan jawaban langsung; percakapan baru membersihkan pesan; Escape menutup panel dan mengembalikan fokus ke pembuka.
+- Teks menyerupai HTML ditampilkan sebagai teks biasa, tanpa membentuk elemen gambar dalam percakapan.
+- Browser: panel berada di dalam layar dan halaman tidak meluap horizontal pada ukuran 320 × 568, 360 × 800, 390 × 844, 768 × 1024, dan 1366 × 900.
+- Akses melalui landing dan navigasi bawah calon mahasiswa diperiksa. Panduan status demo pada Langkah saya tetap membuka FAQ lama.
+- Belum menggunakan AI generatif. Penyesuaian keyboard melalui Visual Viewport tersedia, tetapi keyboard Android/iOS fisik belum diuji.
+
 ## Batas pemeriksaan
 
 Pengujian browser memakai emulasi ukuran layar, bukan perangkat Android/iOS fisik. Perbedaan browser, keyboard virtual, kualitas jaringan nyata, serta pembaca layar masih memerlukan pemeriksaan lanjutan. Uji kapasitas adalah uji model lokal, bukan uji transaksi serentak dari beberapa perangkat. Autentikasi dan keamanan server belum tersedia pada prototipe ini.

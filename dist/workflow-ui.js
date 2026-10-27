@@ -6,7 +6,7 @@ export function createWorkflowUI(api){
   const {esc,icon,pill,fmt,modal,closeModal,toast,persist,render,go}=api;
   const state=()=>api.getState(),role=()=>api.getRole(),kit=()=>api.getKit();
   let conversationDraft='';
-  function openChat(){modal('Tanya ADMIRA',renderChat(kit(),role()));const log=document.querySelector('.chat-messages');if(log)log.scrollTop=log.scrollHeight;}
+  function openChat(){modal('Tanya status demo',renderChat(kit(),role()));const log=document.querySelector('.chat-messages');if(log)log.scrollTop=log.scrollHeight;}
   function ask(question){const s=state(),key=role();const text=question.trim().slice(0,500);if(!text)return;const answer=answerQuestion(s,key,text);s.chats[key].push({actor:'user',text,time:s.now},{actor:'assistant',...answer,time:s.now});s.chats[key]=s.chats[key].slice(-30);persist();openChat();}
   function newTicket(prefill='',conversation=''){
     if(role()!=='student'){toast('Buka Demo Calon Mahasiswa untuk mengajukan bantuan.');return;}
@@ -28,9 +28,9 @@ export function createWorkflowUI(api){
   function planModal(id){if(role()!=='staff')return;const p=state().actionPlans.find(p=>p.id===id);if(!p)return;modal('Rencana & hasil evaluasi',`<h3>${esc(p.title)}</h3><details open class="evidence-snapshot"><summary>Dasar rekomendasi saat rencana dibuat</summary><p>${esc(p.evidence.finding)}</p><p>${esc(p.evidence.evidence)}</p><small>${esc(p.evidence.source)} · ${fmt(p.evidence.updatedAt)}<br>Cakupan: ${esc(Object.values(p.scope).filter(Boolean).join(' / ')||'Semua')}</small><p>${esc(p.evidence.limit)}</p></details><p>${esc(p.proposal)}</p><p><strong>Indikator:</strong> ${esc(p.indicator)}</p><form id="plan-evaluation-form" data-id="${id}"><label class="field">Penanggung jawab<select name="owner">${['Alya Rahma','Bima Prasetyo'].map(n=>`<option ${n===p.owner?'selected':''}>${n}</option>`).join('')}</select></label><label class="field">Waktu evaluasi<input type="date" name="reviewDate" required value="${esc(p.reviewDate)}"></label><label class="field">Status rencana<select name="status">${['Usulan','Disetujui','Berjalan','Dievaluasi','Ditutup'].map(n=>`<option ${n===p.status?'selected':''}>${n}</option>`).join('')}</select></label><label class="field">Hasil evaluasi dan kebutuhan tindak lanjut<textarea name="result" aria-label="Hasil evaluasi dan kebutuhan tindak lanjut" maxlength="2500">${esc(p.result)}</textarea><small>Wajib diisi sebelum Dievaluasi atau Ditutup. Perubahan angka tidak otomatis membuktikan dampak program.</small></label><p class="error" role="alert"></p><button class="btn" type="submit">Simpan evaluasi</button></form>`);}
 
   document.addEventListener('click',e=>{
-    const target=e.target.closest('[data-metric],[data-eval-tab],[data-chat-question],[data-recommendation],[data-plan],[data-action="chat-open"],[data-action="chat-handoff"]');if(!target)return;e.stopImmediatePropagation();
+    const target=e.target.closest('[data-metric],[data-eval-tab],[data-chat-question],[data-recommendation],[data-plan],[data-action="faq-open"],[data-action="chat-handoff"]');if(!target)return;e.stopImmediatePropagation();
     try{
-      if(target.dataset.action==='chat-open'){openChat();return;}
+      if(target.dataset.action==='faq-open'){openChat();return;}
       if(target.dataset.action==='chat-handoff'){handoff();return;}
       if(target.dataset.chatQuestion!==undefined){ask(CHAT_SUGGESTIONS[Number(target.dataset.chatQuestion)]);return;}
       if(role()!=='staff'){toast('Buka demo petugas untuk tindakan ini.');return;}
