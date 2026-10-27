@@ -4,6 +4,17 @@
 
 Prototipe web responsif berbahasa Indonesia berdasarkan ADMIRA PRD v2.0, 27 Oktober 2026.
 
+## Pengembangan v1.2
+
+- Halaman pembuka di `/` atau `/#welcome` menjelaskan manfaat ADMIRA dan menyediakan pilihan **Coba Demo Calon Mahasiswa** serta **Coba Demo Petugas**. Tautan `/#home` tetap membuka ruang calon mahasiswa.
+- Persyaratan identitas dan kelulusan memiliki status, tenggat, catatan petugas, serta riwayat masing-masing. Pengajuan yang dikirim menunggu pemeriksaan; status resmi daftar ulang selesai hanya setelah seluruh dokumen berlaku diverifikasi.
+- Ringkasan petugas berisi enam angka yang dapat dibuka ke daftar pembentuknya. Filter tahun, jalur, prodi, dan wilayah berlaku konsisten. Jumlah orang unik berdasarkan ID orang demo dibedakan dari jumlah aplikasi; kategori yang bertumpang tindih tidak dijumlahkan.
+- **Tanya ADMIRA** adalah FAQ terstruktur yang berjalan tanpa layanan AI. Jawaban pribadi hanya membaca contoh pendaftaran Nadia. Jawaban menyertakan sumber, pembaruan, dan tindakan yang relevan; informasi yang belum tersedia tidak dikarang. Pengalihan ke petugas membuat tiket beserta ringkasan percakapan setelah pengguna mengirim formulir.
+- **Evaluasi & Rekomendasi** menghubungkan temuan, angka beserta penyebut, kelompok/proses, usulan, pelaksana, waktu tinjau, indikator, dan batas kesimpulan. Usulan dapat disimpan menjadi rencana dengan snapshot bukti dan catatan evaluasi.
+- Data latihan lama pada browser dimigrasikan tanpa menghapus tugas, tiket, atau program yang sudah dibuat. Pengiriman pengingat tetap simulasi dan tidak menghubungi penerima nyata.
+
+Untuk demonstrasi: buka landing page → pilih calon mahasiswa → kirim dua berkas contoh melalui Langkah saya → pilih petugas → periksa dokumen pada detail kasus → kembali ke calon mahasiswa. Coba Tanya ADMIRA dan pengalihan tiket, lalu simpan rekomendasi sebagai rencana tindakan.
+
 ## Menjalankan
 
 Memerlukan Node.js. Tidak ada dependensi aplikasi yang perlu diinstal.
@@ -46,6 +57,8 @@ Status Ready hanya menyatakan proses deployment berhasil. Halaman dapat tetap 40
 Semua identitas, jadwal, dan angka adalah data latihan, bukan data universitas atau hasil dataset final. Waktu demo awal: 27 Oktober 2026 pukul 10.00 WIB, dikelola melalui Pengaturan.
 
 Pemilih ruang bukan autentikasi. Penyimpanan menggunakan localStorage browser, bukan basis data. Tidak ada jaminan transaksi bersamaan antarperangkat, pembatasan akses server, penjadwal pesan persisten, pengiriman WhatsApp/email, atau pencadangan operasional. Jangan gunakan data pribadi nyata.
+
+Pemisahan contoh data pada FAQ adalah pembatasan perilaku demo, bukan jaminan keamanan akun operasional. Semua role simulasi dapat dipilih pada browser yang sama. Migrasi menambahkan ID orang dan jalur pada dataset demo lama; atribut tersebut bukan hasil pencocokan data institusi nyata. Tidak ada AI generatif, prediksi kelulusan, atau penetapan kebijakan otomatis.
 
 Impor satu tabel yang sudah dipetakan tersedia untuk demonstrasi. Pemetaan lima sumber, rekonsiliasi relasi, serta penggabungan ke ringkasan menunggu dataset dan kamus final. Batch impor terpisah agar tidak bercampur dengan data latihan utama. Mentor, data kapasitas institusi, keputusan pendanaan, integrasi sumber resmi, dan konten prodi terverifikasi belum tersedia.
 

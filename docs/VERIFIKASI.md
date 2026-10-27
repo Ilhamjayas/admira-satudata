@@ -1,5 +1,17 @@
 # Verifikasi ADMIRA
 
+## Pengembangan terpadu v1.2 · 28 Oktober 2026
+
+- 23 pengujian model mencakup regresi fitur lama, migrasi data demo, pemisahan orang/aplikasi, filter jalur, penyebut hasil final, status per dokumen, alasan perbaikan, pembatasan FAQ, tiket dengan ringkasan percakapan, serta snapshot rencana dan validasi hasil evaluasi.
+- Browser: landing mengarahkan ke role demo yang dipilih. Halaman tidak menyatakan autentikasi nyata telah tersedia.
+- Browser: dua dokumen contoh dikirim; pengajuan berubah menjadi Menunggu verifikasi. Petugas mengesahkan identitas dan meminta perbaikan kelulusan. Alasan yang sama muncul pada dashboard dan Tanya ADMIRA. Pengiriman ulang serta pemeriksaan akhir menghasilkan Daftar ulang selesai.
+- Browser: pengalihan Tanya ADMIRA membuat tiket dengan penanggung jawab dan riwayat percakapan. Status tiket terpisah dari status penerimaan.
+- Browser: filter Mandiri menghasilkan empat orang/aplikasi pada data demo; angka diterima tiga dibuka ke tiga aplikasi yang sesuai.
+- Browser: rekomendasi disimpan dengan pelaksana dan waktu evaluasi. Hasil dicatat sebagai Dievaluasi; dasar awal tetap tersimpan sebagai snapshot.
+- Pemeriksaan 40 kombinasi: landing, beranda calon mahasiswa, persyaratan, bantuan, klinik, ringkasan, antrean, evaluasi, data, dan akun pada 360, 390, 768, serta 1366 px. Tidak ditemukan gulir horizontal halaman. Panel rekomendasi juga diperiksa pada 360 px.
+- Berkas unggahan uji merupakan gambar sintetis `tests/demo-document.png`; tidak menggunakan identitas atau dokumen calon mahasiswa nyata. File dengan ekstensi dan isi yang tidak cocok ditolak.
+- Batas: pengujian ukuran layar adalah emulasi browser, bukan pengujian perangkat fisik. Implementasi masih memakai localStorage, tanpa autentikasi server, AI eksternal, atau pesan eksternal.
+
 ## Pembaruan desain editorial v1.1
 
 - Mempertahankan palet hijau gelap `#123E3A`, krem `#F7F5EF`, dan aprikot `#F2B66D`.
