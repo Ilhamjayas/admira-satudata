@@ -6,6 +6,7 @@ test-results/
 
 # Konfigurasi lokal, akun, dan rahasia
 .openai/
+.vercel/
 .codex/
 .agents/
 .aws/

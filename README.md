@@ -19,6 +19,14 @@ npm run check
 npm test
 ```
 
+## Deploy ke Vercel
+
+Repositori ini memakai halaman statis siap terbit di folder `dist/`. Konfigurasi `vercel.json` menetapkan preset Other, pemeriksaan sintaks sebagai perintah build, dan `dist` sebagai Output Directory.
+
+Hubungkan branch `main` dengan Root Directory pada akar repositori (`.`). Jangan arahkan Root Directory ke `dist`; konfigurasi sudah mengatur folder keluarannya. Setelah perubahan di-push, Vercel dapat menerbitkan ulang melalui integrasi GitHub.
+
+Status Ready hanya menyatakan proses deployment berhasil. Halaman dapat tetap 404 bila Output Directory tidak menunjuk folder yang memuat `index.html`.
+
 ## Fitur yang berjalan
 
 - Ruang petugas dan calon mahasiswa dengan data bersama pada browser yang sama.
