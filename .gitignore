@@ -1,0 +1,31 @@
+node_modules/
+*.tar.gz
+*.log
+.DS_Store
+test-results/
+
+# Konfigurasi lokal, akun, dan rahasia
+.openai/
+.codex/
+.agents/
+.aws/
+.ssh/
+.env
+.env.*
+!.env.example
+.npmrc
+.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets.*
+
+# Cadangan dan keluaran sementara
+outputs/
+coverage/
+*.bak
+*.tmp
+Thumbs.db
