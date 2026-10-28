@@ -58,6 +58,16 @@ Tanggal pemeriksaan: 27 Oktober 2026. Cakupan: prototipe dengan data simulasi.
 - Filter jalur dan rincian metrik diperiksa menghasilkan jumlah dan baris yang sama. Pilihan tahap ilustrasi landing bekerja secara terpisah dari data aplikasi.
 - Animasi singkat hanya dipakai saat pengaturan pengguna mengizinkan gerakan. Chatbot tetap tertutup sampai dipilih dan menggunakan panduan lokal.
 
+## Perapian halaman kerja v1.4.1 · 28 Oktober 2026
+
+- Perubahan pada `app.js` diverifikasi cocok persis dengan tiga transformasi markup: atribut halaman, kepala kolom tabel analisis, dan kepala baris/label rasio. Tidak ada perubahan pada fungsi bisnis atau penanganan aksi.
+- Pemeriksaan sintaks dan seluruh 27 pengujian logika lulus.
+- Sebanyak 16 halaman pada lebar 320, 360, 390, 768, dan 1366 px diperiksa (80 kombinasi). Tidak ditemukan luapan horizontal halaman. Filter pada HP juga diperiksa berada dalam dua kolom.
+- Tab Prodi/Wilayah/Siklus, Klinik/Register program/Tiket bantuan, serta pengaturan petugas diperiksa pada lebar 320, 390, 768, dan 1366 px (28 kombinasi tambahan), tanpa luapan horizontal.
+- CSV contoh yang diunduh dari aplikasi dipilih kembali melalui formulir impor: dua baris terbaca, nol masalah, dan tindakan publikasi tersedia. Batch contoh tidak diterbitkan dalam pemeriksaan ini.
+- Pemesanan klinik mengubah keterisian dari 1/3 menjadi 2/3, lalu pembatalan mengembalikannya ke 1/3 melalui kontrol yang sama.
+- Tabel analisis pada HP menyajikan nama kelompok dan tiga rasio dengan label; nilai dan penyebut tetap berasal dari perhitungan yang sama.
+
 ## Batas pemeriksaan
 
 Pengujian browser memakai emulasi ukuran layar, bukan perangkat Android/iOS fisik. Perbedaan browser, keyboard virtual, kualitas jaringan nyata, serta pembaca layar masih memerlukan pemeriksaan lanjutan. Uji kapasitas adalah uji model lokal, bukan uji transaksi serentak dari beberapa perangkat. Autentikasi dan keamanan server belum tersedia pada prototipe ini.

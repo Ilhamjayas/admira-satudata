@@ -1,0 +1,160 @@
+/* Refinement of existing work pages. No workflow or calculation changes. */
+.content[data-view]>.intro{margin-bottom:21px;padding-bottom:0}
+.content[data-view]>.demo-banner{padding:10px 13px;margin-bottom:21px}
+.content[data-view]>.filters{margin-bottom:15px}
+.content[data-view]>.tabs{margin-bottom:20px}
+.content[data-view] .notice{font-size:12px;line-height:1.9;border-color:#c79457;background:#f2eadc;border-radius:0 4px 4px 0}
+.content[data-view] .list-row h3{font-size:14px;line-height:1.6}
+.content[data-view] .list-row p{font-size:12px;line-height:1.9}
+.content[data-view] .list-row small{font-size:10px;line-height:1.9}
+.content[data-view]>.two-col>.panel>p{font-size:12px;line-height:1.9;color:#5f7365}
+.content[data-view] .field small{font-size:10px;line-height:1.85}
+.content[data-view] .help-box{font-size:11px;line-height:1.9}
+.content[data-view] .settings-row p{font-size:12px;line-height:1.9}
+.content[data-view] .settings-row h3{font-size:13px;line-height:1.7}
+.content[data-view] .empty{padding:34px 22px;background:#f2f4eb;border:1px dashed #d5dfcd}
+.content[data-view] .empty h3{font-size:15px;line-height:1.6}
+.content[data-view] .empty p{font-size:11px;line-height:1.9;margin-bottom:0;max-width:460px;margin-left:auto;margin-right:auto}
+.content[data-view] input[type=file]::file-selector-button{font:inherit;font-weight:650;font-size:11px;min-height:34px;padding:7px 12px;border:0;border-radius:3px;color:#f7f5ef;background:#123e3a;margin-right:12px;cursor:pointer}
+.content[data-view] input[type=file]:hover::file-selector-button{background:#2b594e}
+.content[data-view] .btn:disabled{background:#e5e9df;border-color:#d9dfd1;color:#667660;opacity:1}
+
+/* Search and scope stay together; the underlying filters are unchanged. */
+.content[data-view=followup]>.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;padding:15px 0;border-top:1px solid #dce2d8;border-bottom:1px solid #dce2d8;margin-bottom:16px}
+.content[data-view=followup]>.filters .filter-label{grid-column:1/-1;font-size:9px;margin-bottom:2px}
+.content[data-view=followup]>.filters select{width:100%;min-width:0;max-width:100%;font-size:11px;min-height:40px}
+.content[data-view=followup]>.filters .search-input{grid-column:1/3;min-width:0;width:100%;max-width:100%;font-size:12px}
+.content[data-view=followup]>.filters .updated{grid-column:3/5;justify-self:end;align-self:center;line-height:1.8;font-size:9px}
+.content[data-view=followup]>.tabs{gap:0}
+.content[data-view=followup]>.tabs .tab{font-size:10px;padding:11px 13px;min-height:42px}
+.content[data-view=followup] .metric-context{background:#e7eddf;border-radius:4px;border:0;padding:13px 16px;gap:14px;font-size:11px}
+.content[data-view=followup] .metric-context>strong{font-size:12px}.content[data-view=followup] .metric-context>span{font-size:10px}
+.content[data-view=followup] .queue-panel>.panel-head{padding:0 23px;margin-bottom:19px}
+.content[data-view=followup] .queue-panel>.panel-head h2{font-size:18px;line-height:1.5}
+.content[data-view=followup] .work-table td small{color:#65785f;font-size:10px;line-height:1.8}
+.content[data-view=followup] .work-table th{padding-top:14px;padding-bottom:14px;color:#526c57}
+
+/* Analytical figures and context form one reading surface. */
+.content[data-view=analysis]>.two-col{grid-template-columns:minmax(0,1.65fr) minmax(250px,1fr);gap:21px}
+.content[data-view=analysis]>.two-col>.panel{padding:26px}
+.content[data-view=analysis] .panel-head{padding-bottom:18px;border-bottom:1px solid #e0e6d8;margin-bottom:25px}
+.content[data-view=analysis] .panel-head h2{font-size:18px;line-height:1.5}
+.content[data-view=analysis] .panel-head p{font-size:10px;line-height:1.8;color:#6c7d64}
+.content[data-view=analysis] .bar-list{gap:26px;margin:0 0 5px}
+.content[data-view=analysis] .bar-label{gap:16px;align-items:flex-start;margin-bottom:9px}
+.content[data-view=analysis] .bar-label>span{font-size:12px;line-height:1.8;color:#35553d}
+.content[data-view=analysis] .bar-label>strong{font-size:12px;font-weight:750;line-height:1.8;font-variant-numeric:tabular-nums;white-space:nowrap}
+.content[data-view=analysis] .bar-track{height:10px;border-radius:2px;background:#edf1e6}
+.content[data-view=analysis] .bar-track>span{border-radius:2px;background:#547b60}
+.content[data-view=analysis]>.two-col>aside.panel{background:#123e3a;color:#f7f5ef;display:flex;flex-direction:column}
+.content[data-view=analysis]>.two-col>aside.panel>h2{font-size:19px;line-height:1.45;font-weight:650;letter-spacing:-.5px;margin-bottom:18px;color:#f7f5ef}
+.content[data-view=analysis]>.two-col>aside.panel>p{font-size:12px;line-height:1.95;color:#d0ddca;margin-bottom:19px}
+.content[data-view=analysis]>.two-col>aside.panel .help-box{font-size:11px;line-height:1.95;background:#ffffff0d;border-left:2px solid #f2b66d;border-radius:0;padding:15px;color:#e0e7d6;margin-top:0}
+.content[data-view=analysis]>.two-col>aside.panel>.text-btn{font-size:10px;line-height:1.8;color:#f2c388;margin-top:auto;padding-top:23px;align-self:flex-start}
+.content[data-view=analysis]>.panel.section-gap{padding:26px}
+.content[data-view=analysis]>.panel.section-gap>h2{font-size:18px;margin-bottom:22px}
+.analysis-matrix{width:100%;min-width:0;border-collapse:collapse}
+.analysis-matrix thead th{font-size:9px;letter-spacing:.4px;line-height:1.7;padding:13px 18px;background:#eef2e6;text-align:center;white-space:normal;color:#5c7256}
+.analysis-matrix thead th:first-child{text-align:left;width:31%}
+.analysis-matrix tbody th{font-size:12px;font-weight:650;letter-spacing:0;text-transform:none;background:transparent;color:#335238;white-space:normal;line-height:1.8;padding:20px 18px;border-bottom:1px solid #e4eadb}
+.analysis-matrix tbody td{font-size:15px;font-weight:550;font-variant-numeric:tabular-nums;letter-spacing:-.4px;text-align:center;color:#123e3a;line-height:1.8;padding:20px 18px;border-bottom:1px solid #e4eadb}
+.analysis-matrix tbody tr:last-child>*{border-bottom:0}
+.analysis-matrix tbody tr:hover{background:#f7f9f0}
+#scenario-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 20px;margin-top:22px}
+#scenario-form .field{margin-bottom:0;font-size:11px;line-height:1.8}
+#scenario-form .field input{font-variant-numeric:tabular-nums;font-size:16px;padding:10px 12px}
+#scenario-form>.error{grid-column:1/-1;margin:0;font-size:11px;line-height:1.8}
+#scenario-form>.error:empty{display:none}
+#scenario-form>.btn{grid-column:1/-1;justify-self:start;margin-top:5px}
+.content[data-view=analysis] .metric-result{background:#123e3a;color:#f7f5ef;padding:29px;border-radius:6px;display:flex;align-items:flex-start;flex-direction:column}
+.content[data-view=analysis] .metric-result .eyebrow{font-size:8px;color:#d3d8be}
+.content[data-view=analysis] .metric-result h2{font-family:Manrope,Arial,sans-serif;font-size:19px;font-weight:550;line-height:1.5;letter-spacing:-.5px;color:#f7f5ef;margin:11px 0 0}
+.content[data-view=analysis] .metric-result .big{font-size:70px;line-height:1.1;letter-spacing:-3px;font-weight:450;color:#f2b66d;margin:20px 0 14px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;max-width:100%}
+.content[data-view=analysis] .metric-result>p{font-size:11px;line-height:1.95;color:#cfddc7}
+.content[data-view=analysis] .metric-result .formula{font-size:11px;background:#ffffff08;width:100%;border-top:1px dashed #ffffff35;padding:15px 12px;overflow-wrap:anywhere;border-radius:2px;color:#f3e2c8}
+.content[data-view=analysis] .metric-result .btn{font-size:10px;min-height:40px;border-color:#ffffff44;color:#f7f5ef;background:transparent;margin-top:auto}
+.content[data-view=analysis] .metric-result .btn:hover{color:#123e3a;background:#f7f5ef}
+
+/* Source preparation: a file form and the rules that govern it. */
+.content[data-view=data]>.two-col{grid-template-columns:minmax(0,1.45fr) minmax(260px,1fr);gap:22px}
+.content[data-view=data]>.two-col>.panel{padding:26px}
+.content[data-view=data]>.two-col>.panel>h2{font-size:20px;line-height:1.5;margin-bottom:14px}
+.content[data-view=data]>.two-col>.panel:nth-child(2){background:#e9e2d2;counter-reset:source-rule}
+.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row{counter-increment:source-rule;position:relative;padding:18px 0 18px 34px;border-color:#ccd1be}
+.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row:before{content:counter(source-rule,decimal-leading-zero);position:absolute;left:0;top:17px;font:24px/1.4 'Instrument Serif',Georgia,serif;color:#8f7750}
+.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row h3{font-size:12px;line-height:1.7;margin-bottom:6px}
+.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row p{font-size:11px;line-height:1.9;margin-bottom:0;color:#58694e}
+#import-form{margin:23px 0 19px}
+#import-form>.field{padding:18px;background:#f1f4e9;border:1px dashed #bccdb0;border-radius:4px;font-size:12px;margin-bottom:18px}
+#import-form>.field:focus-within{border-color:#426648;background:#eaf0e1}
+#import-form input[type=file]{padding:8px 0;border:0;background:transparent;margin-top:8px;min-height:48px;width:100%;font-size:11px;font-weight:450;color:#516749}
+#import-form input[type=file]::file-selector-button{min-height:38px}
+#import-form>.text-btn{font-size:10px;margin-left:12px;min-height:42px;line-height:1.8}
+#import-result:not(:empty){border-top:1px solid #dce5d2;padding-top:20px;margin:21px 0}
+#import-result h3{font-size:15px;overflow-wrap:anywhere;line-height:1.7}
+#import-result p{font-size:12px;line-height:1.9}
+#import-result .error{background:#faece3;border-left:3px solid #d96a4b;border-radius:0 4px 4px 0;padding:13px 15px;color:#873f2c;overflow-wrap:anywhere}
+#import-result .login-note{font-size:10px;line-height:1.95}
+.content[data-view=data]>.panel.section-gap{padding:25px}
+.content[data-view=data]>.panel.section-gap .empty{border:0;background:#f1f4e9;border-top:1px solid #dce5d2;border-radius:0;padding:27px 20px}
+
+/* Service pages retain their existing booking, tickets, and programme controls. */
+.content[data-view=programs] .session-card,.content[data-view=sessions] .session-card{padding:25px 24px;border-top:3px solid #527861;border-radius:5px;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.content[data-view=programs] .session-card .panel-head{width:100%;margin-bottom:17px;gap:15px}
+.content[data-view=programs] .session-card h2,.content[data-view=sessions] .session-card h2{font-family:Manrope,Arial,sans-serif;font-size:20px;line-height:1.45;font-weight:650;letter-spacing:-.6px;margin-bottom:16px}
+.content[data-view=programs] .session-card>.panel-head h2{margin-bottom:0}
+.content[data-view=programs] .session-card>p,.content[data-view=sessions] .session-card>p{font-size:12px;line-height:1.9;max-width:100%}
+.content[data-view=sessions] .session-card>.pill{margin-bottom:3px}
+.content[data-view=sessions] .session-card>.section-gap{margin-top:16px}
+.content[data-view=programs] .session-card .session-meta,.content[data-view=sessions] .session-card .session-meta{font-size:11px;line-height:1.95;color:#657b5c}
+.content[data-view=programs] .session-card .capacity,.content[data-view=sessions] .session-card .capacity{height:5px;border-radius:1px;width:100%;margin:4px 0 13px;background:#e6eddd;flex-shrink:0}
+.content[data-view=programs] .session-card .capacity>span,.content[data-view=sessions] .session-card .capacity>span{background:#739064}
+.content[data-view=programs] .session-card>.text-btn,.content[data-view=sessions] .session-card>.btn{margin-top:auto;font-size:11px;min-height:43px}
+.content[data-view=programs] .list-row,.content[data-view=help] .list-row{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:16px;padding:22px 0;align-items:start}
+.content[data-view=programs] .list-row>.avatar,.content[data-view=help] .list-row>.avatar{border-radius:5px;background:#e8eedf;width:34px;height:39px;color:#58714e}
+.content[data-view=programs] .list-row>.avatar>svg,.content[data-view=help] .list-row>.avatar>svg{width:17px;height:17px}
+.content[data-view=programs] .list-row .label{font-size:8px;line-height:1.8;letter-spacing:1px;display:block;margin-bottom:8px}
+.content[data-view=programs] .list-row>.grow,.content[data-view=help] .list-row>.grow{min-width:0}
+.content[data-view=programs] .list-row>div:last-child,.content[data-view=help] .list-row>div:last-child{padding-top:1px;text-align:right}
+.content[data-view=programs] .list-row .text-btn,.content[data-view=help] .list-row .text-btn{min-height:40px;font-size:10px;gap:8px}
+.content[data-view=help] .panel>.panel-head{padding-bottom:17px;border-bottom:1px solid #e0e7d6;margin-bottom:0}
+.content[data-view=explore] .prodi-card{padding:25px;display:flex;flex-direction:column;align-items:flex-start}
+.content[data-view=explore] .prodi-card>svg{width:25px;height:25px;color:#65824f;margin-bottom:18px}
+.content[data-view=explore] .prodi-card>h2{font-family:Manrope,Arial,sans-serif;font-size:21px;font-weight:650;letter-spacing:-.5px;line-height:1.45;margin-bottom:13px}
+.content[data-view=explore] .prodi-card>p{font-size:12px;line-height:1.95;color:#61735a}
+.content[data-view=explore] .prodi-card>.pill{font-size:9px;margin:3px 0 0}
+.content[data-view=explore] .prodi-card>.section-gap{padding-top:13px;margin-top:auto}
+.content[data-view=explore] .prodi-card .text-btn{font-size:11px;min-height:40px}
+.content[data-view=access]>.two-col>.panel:nth-child(2){background:#e9eddf}
+.content[data-view=access] .check-item{font-size:12px;line-height:1.85;gap:10px;align-items:flex-start}
+.content[data-view=access] .check-item>input{width:18px;height:18px;flex-shrink:0;margin-top:3px}
+.content[data-view=access] .login-note{font-size:10px;line-height:1.95}
+.content[data-view=account] .settings-row{align-items:flex-start;gap:18px;padding:19px 0}
+.content[data-view=account] .settings-row .btn{font-size:10px;min-height:40px;white-space:nowrap}
+.content[data-view=account] #clock-form .field{font-size:11px}
+
+@media(max-width:1050px){.content[data-view=analysis]>.two-col{grid-template-columns:minmax(0,1.45fr) minmax(220px,1fr);gap:18px}.content[data-view=analysis]>.two-col>.panel{padding:23px}.content[data-view=analysis] .bar-label>strong{font-size:11px}.content[data-view=analysis] .bar-label>span{font-size:11px}.content[data-view=analysis] .bar-label{gap:10px}.content[data-view=analysis]>.two-col>aside.panel>h2{font-size:18px}.content[data-view=analysis]>.two-col>aside.panel>p{font-size:11px}.content[data-view=data]>.two-col{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.content[data-view=data]>.two-col>.panel{padding:23px}.content[data-view=programs] .session-card h2,.content[data-view=sessions] .session-card h2{font-size:18px}.analysis-matrix thead th{font-size:8px;padding:12px}.analysis-matrix tbody th,.analysis-matrix tbody td{padding:18px 12px}.content[data-view=followup]>.tabs .tab{font-size:9px;padding-left:10px;padding-right:10px}}
+@media(min-width:701px) and (max-width:900px){.content[data-view=analysis]>.two-col,.content[data-view=data]>.two-col{grid-template-columns:1fr}.content[data-view=analysis]>.two-col>aside.panel{display:block}.content[data-view=analysis]>.two-col>aside.panel>.text-btn{margin-top:15px;padding-top:0}.content[data-view=analysis] .metric-result{min-height:370px}.content[data-view=programs] .session-card .panel-head{flex-wrap:wrap}.content[data-view=programs] .session-card .panel-head>.pill{margin-top:-5px}.content[data-view=analysis] .bar-label>span{font-size:12px}.content[data-view=analysis] .bar-label>strong{font-size:12px}}
+
+@media(max-width:700px){
+  .content[data-view]>.intro{margin-bottom:19px;gap:17px}.content[data-view]>.intro p{font-size:12px;line-height:1.9}.content[data-view]>.intro .intro-actions{gap:8px}.content[data-view]>.intro .btn{font-size:10px;min-height:41px}.content[data-view]>.demo-banner{margin-bottom:18px;padding:10px 12px;font-size:9px;line-height:1.9}.content[data-view]>.tabs{gap:0;margin-bottom:18px}.content[data-view]>.tabs .tab{font-size:10px;min-height:42px;padding:10px 12px}.content[data-view] .panel>h2{font-size:18px;line-height:1.5}.content[data-view]>.two-col>.panel>p{font-size:12px;line-height:1.95}.content[data-view] .field{font-size:12px}.content[data-view] .field input:not([type=file]),.content[data-view] .field select,.content[data-view] .field textarea{font-size:16px;min-height:45px}.content[data-view] .field small{font-size:10px;line-height:1.9}.content[data-view] .help-box{font-size:11px;line-height:1.95;padding:15px}.content[data-view] .empty{padding:28px 17px}.content[data-view] .empty h3{font-size:15px}.content[data-view] .empty p{font-size:11px;line-height:1.9}
+  /* A grid avoids flex wrapping caused by percentage widths plus the gaps. */
+  .content[data-view]>.filters,.content[data-view]>.desk-filterbar>.filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;margin-bottom:17px}
+  .content[data-view] .filters>.filter-label{grid-column:1/-1;display:flex;font-size:9px;margin:0}
+  .content[data-view] .filters>select{width:100%;min-width:0;max-width:100%;flex-basis:auto!important;font-size:11px;min-height:42px;padding:9px 10px}
+  .content[data-view] .filters>.search-input{grid-column:1/-1;min-width:0;max-width:100%;width:100%;font-size:16px;min-height:44px}
+  .content[data-view] .filters>.updated{grid-column:1/-1;width:auto;margin:3px 0 0;justify-self:start;justify-content:flex-start;font-size:8px;line-height:1.9}
+  .content[data-view] .desk-filterbar>.filters{margin-bottom:0}
+  .content[data-view=followup]>.filters{padding:13px 0;gap:8px}.content[data-view=followup]>.filters .filter-label{grid-column:1/-1}.content[data-view=followup]>.filters .search-input{grid-column:1/-1}.content[data-view=followup]>.filters .updated{grid-column:1/-1;justify-self:start;margin-top:3px}
+  .content[data-view=followup]>.tabs{gap:0;display:flex;flex-wrap:wrap}.content[data-view=followup]>.tabs .tab{font-size:9px;min-height:41px;padding:10px 9px}.content[data-view=followup] .metric-context{padding:14px 15px;gap:7px}.content[data-view=followup] .metric-context>strong{font-size:12px}.content[data-view=followup] .metric-context>span{font-size:10px;line-height:1.9}.content[data-view=followup] .queue-panel{padding-left:0;padding-right:0}.content[data-view=followup] .queue-panel>.panel-head{padding:0 18px;margin-bottom:19px}.content[data-view=followup] .queue-panel>.panel-head h2{font-size:17px;line-height:1.5}.content[data-view=followup] .queue-panel>.panel-head p{font-size:11px;line-height:1.85}.content[data-view=followup] .work-table td small{font-size:10px;line-height:1.9}.content[data-view=followup] .work-table tr{padding-top:20px;padding-bottom:20px;gap:10px}.content[data-view=followup] .work-table td[data-label]:before{font-size:9px;color:#738467;font-weight:650}
+  .content[data-view=analysis]>.two-col,.content[data-view=data]>.two-col{grid-template-columns:minmax(0,1fr);gap:18px}.content[data-view=analysis]>.two-col>.panel{padding:22px 20px}.content[data-view=analysis] .panel-head{padding-bottom:17px;margin-bottom:24px}.content[data-view=analysis] .panel-head h2{font-size:17px;line-height:1.5}.content[data-view=analysis] .panel-head p{font-size:10px;line-height:1.8}.content[data-view=analysis] .bar-list{gap:23px}.content[data-view=analysis] .bar-label{gap:10px;margin-bottom:9px}.content[data-view=analysis] .bar-label>span{font-size:11px;line-height:1.9}.content[data-view=analysis] .bar-label>strong{font-size:10px;line-height:1.9}.content[data-view=analysis]>.two-col>aside.panel>h2{font-size:20px;line-height:1.45}.content[data-view=analysis]>.two-col>aside.panel>p{font-size:12px;line-height:1.95}.content[data-view=analysis]>.two-col>aside.panel .help-box{font-size:11px;line-height:1.95;padding:14px}.content[data-view=analysis]>.two-col>aside.panel>.text-btn{padding-top:20px;font-size:10px;min-height:42px}.content[data-view=analysis]>.panel.section-gap{padding:22px 18px}.content[data-view=analysis]>.panel.section-gap>h2{font-size:17px;margin-bottom:17px}
+  .analysis-matrix thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  .analysis-matrix tbody{display:block}.analysis-matrix tbody tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px 8px;padding:19px 0;border-top:1px solid #dce5d2}.analysis-matrix tbody tr>*{background:transparent;border:0!important;padding:0!important;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left!important}.analysis-matrix tbody th{grid-column:1/-1;font-size:13px;font-weight:750;line-height:1.7}.analysis-matrix tbody td{font-size:19px;font-weight:550;letter-spacing:-.5px;line-height:1.5}.analysis-matrix td[data-label]:before{content:attr(data-label);display:block;font-size:8px;font-weight:550;letter-spacing:0;color:#6c805e;line-height:1.7;min-height:29px;margin-bottom:7px}.analysis-matrix tbody tr:last-child{padding-bottom:0}
+  #scenario-form{grid-template-columns:minmax(0,1fr);gap:17px;margin-top:20px}#scenario-form>.error,#scenario-form>.btn{grid-column:1}#scenario-form .field{font-size:12px;line-height:1.8}#scenario-form .field input{font-size:16px;min-height:46px}#scenario-form>.btn{font-size:11px;min-height:44px;justify-self:stretch;justify-content:space-between}.content[data-view=analysis] .metric-result{padding:26px 23px}.content[data-view=analysis] .metric-result .eyebrow{font-size:8px}.content[data-view=analysis] .metric-result h2{font-size:20px;line-height:1.45}.content[data-view=analysis] .metric-result .big{font-size:62px;margin:21px 0 16px;letter-spacing:-2.5px}.content[data-view=analysis] .metric-result>p{font-size:12px;line-height:1.9}.content[data-view=analysis] .metric-result .formula{font-size:11px;padding:15px 11px}.content[data-view=analysis] .metric-result .btn{min-height:43px;font-size:11px}
+  .content[data-view=data]>.two-col>.panel{padding:22px 20px}.content[data-view=data]>.two-col>.panel>h2{font-size:19px;line-height:1.5}.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row{padding:18px 0 18px 32px}.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row:before{font-size:24px}.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row h3{font-size:13px}.content[data-view=data]>.two-col>.panel:nth-child(2) .list-row p{font-size:11px;line-height:1.95}#import-form{margin-top:21px}#import-form>.field{padding:15px;font-size:12px}#import-form .field small{font-size:10px;line-height:1.95}#import-form input[type=file]{font-size:11px;min-height:46px;line-height:1.8}#import-form input[type=file]::file-selector-button{min-height:40px;font-size:11px;margin-right:8px;padding:8px 10px}#import-form>.btn{font-size:11px;min-height:44px;width:100%}#import-form>.text-btn{display:flex;width:100%;margin:9px 0 0;font-size:11px;min-height:42px;justify-content:center}#import-result .error{font-size:11px;padding:12px;line-height:1.9}#import-result h3{font-size:14px}#import-result .btn{font-size:11px;min-height:44px}.content[data-view=data]>.panel.section-gap{padding:22px 20px}
+  .content[data-view=programs] .session-card,.content[data-view=sessions] .session-card{padding:23px 20px}.content[data-view=programs] .session-card h2,.content[data-view=sessions] .session-card h2{font-size:21px;line-height:1.4}.content[data-view=programs] .session-card .panel-head{gap:12px;flex-wrap:wrap}.content[data-view=programs] .session-card .panel-head>.pill{font-size:9px}.content[data-view=programs] .session-card>p,.content[data-view=sessions] .session-card>p{font-size:12px;line-height:1.95}.content[data-view=programs] .session-card .session-meta,.content[data-view=sessions] .session-card .session-meta{font-size:11px;line-height:1.95}.content[data-view=programs] .session-card>.text-btn,.content[data-view=sessions] .session-card>.btn{font-size:11px;min-height:44px}.content[data-view=sessions] .session-card>.btn{width:100%;justify-content:space-between}
+  .content[data-view=programs] .list-row,.content[data-view=help] .list-row{grid-template-columns:29px minmax(0,1fr);gap:11px 12px;padding:21px 0}.content[data-view=programs] .list-row>.avatar,.content[data-view=help] .list-row>.avatar{width:28px;height:35px}.content[data-view=programs] .list-row>.avatar>svg,.content[data-view=help] .list-row>.avatar>svg{width:15px;height:15px}.content[data-view=programs] .list-row>.grow,.content[data-view=help] .list-row>.grow{min-width:0}.content[data-view=programs] .list-row>div:last-child,.content[data-view=help] .list-row>div:last-child{grid-column:2;text-align:left;padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.content[data-view=programs] .list-row>div:last-child>br,.content[data-view=help] .list-row>div:last-child>br{display:none}.content[data-view=programs] .list-row h3,.content[data-view=help] .list-row h3{font-size:14px;line-height:1.7}.content[data-view=programs] .list-row p,.content[data-view=help] .list-row p{font-size:12px;line-height:1.95;overflow-wrap:anywhere}.content[data-view=programs] .list-row small,.content[data-view=help] .list-row small{font-size:10px;line-height:1.95}.content[data-view=programs] .list-row .text-btn,.content[data-view=help] .list-row .text-btn{min-height:42px;font-size:11px}.content[data-view=programs] .list-row .pill,.content[data-view=help] .list-row .pill{font-size:9px}
+  .content[data-view=explore] .prodi-card{padding:24px 21px}.content[data-view=explore] .prodi-card>h2{font-size:22px;line-height:1.4}.content[data-view=explore] .prodi-card>p{font-size:12px;line-height:1.95}.content[data-view=explore] .prodi-card>.pill{font-size:9px;white-space:normal}.content[data-view=explore] .prodi-card .text-btn{font-size:11px;min-height:43px}.content[data-view=access] .check-item{font-size:12px;line-height:1.9}.content[data-view=access] .login-note{font-size:10px;line-height:1.95}.content[data-view=account] .settings-row{gap:12px;padding:18px 0}.content[data-view=account] .settings-row p{font-size:12px;line-height:1.9}.content[data-view=account] #clock-form .field{font-size:12px}
+}
+@media(max-width:370px){.content[data-view] .filters>select{font-size:10px;padding-left:8px;padding-right:8px}.content[data-view=followup]>.tabs .tab{font-size:8px;padding-left:8px;padding-right:8px}.content[data-view=analysis]>.two-col>.panel{padding:21px 18px}.content[data-view=analysis] .bar-label>span{font-size:10px}.content[data-view=analysis] .bar-label>strong{font-size:9px}.content[data-view=data]>.two-col>.panel{padding:21px 18px}#import-form>.field{padding:12px}#import-form input[type=file]{font-size:10px}.analysis-matrix td[data-label]:before{font-size:7px;min-height:27px}.analysis-matrix tbody td{font-size:18px}}
+@media print{.content[data-view=analysis]>.two-col>aside.panel,.content[data-view=analysis] .metric-result{background:white;color:#123e3a;border:1px solid #ccc}.content[data-view=analysis]>.two-col>aside.panel>h2,.content[data-view=analysis]>.two-col>aside.panel>p,.content[data-view=analysis] .metric-result *{color:#123e3a!important}.content[data-view=analysis]>.two-col>aside.panel .help-box{color:#123e3a;background:#fff;border-color:#bbb}.analysis-matrix thead{position:static;width:auto;height:auto;clip:auto;overflow:visible;white-space:normal}.analysis-matrix tbody{display:table-row-group}.analysis-matrix tbody tr{display:table-row}.analysis-matrix tbody td,.analysis-matrix tbody th{display:table-cell;padding:8px!important;font-size:10px}.analysis-matrix td[data-label]:before{display:none}.content[data-view]>.filters,.content[data-view]>.tabs{display:none!important}#import-form{display:none}}

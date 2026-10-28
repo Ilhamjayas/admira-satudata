@@ -4,6 +4,15 @@
 
 Prototipe web responsif berbahasa Indonesia berdasarkan ADMIRA PRD v2.0, 27 Oktober 2026.
 
+## Perapian v1.4.1 · Halaman kerja dan layanan
+
+- Filter HP menggunakan dua kolom dengan pencarian satu baris penuh. Ini memperbaiki susunan filter yang sebelumnya membungkus menjadi empat baris akibat lebar dan jarak antarbidang.
+- Analisis menggunakan panel konteks yang berbeda dari grafik, angka dengan penyebut yang tetap sama, serta tabel berlabel yang menjadi daftar rasio pada HP. Kepala kolom dan baris diberi penanda semantik untuk aksesibilitas.
+- Formulir impor CSV, hasil pemeriksaan, dan aturan asal data ditata sebagai area kerja yang saling mendampingi. Pemilihan berkas tetap melalui kontrol browser asli.
+- Klinik, program, tiket, profil prodi, bantuan akses, dan pengaturan diselaraskan tipografinya. Kontrol pemesanan, pembatalan, respons, dan formulir tetap memakai penanganan sebelumnya.
+- Pembaruan hanya menambah atribut presentasi serta kepala tabel pada `app.js`, dengan gaya pada `workspace.css`. Model, fungsi alur, perhitungan, dan chatbot tidak diubah.
+- Pengujian logika tetap 27/27 lulus. Pemeriksaan browser mencakup 80 kombinasi halaman/ukuran dan 28 kombinasi tab/pengaturan. Pemesanan–pembatalan sesi dan pemeriksaan CSV contoh berhasil dicoba.
+
 ## Pengembangan v1.4 · Perjalanan Menuju Kampus
 
 Pembaruan ini berfokus pada presentasi. Modul data, aturan bisnis, perhitungan, penyimpanan, unggah/verifikasi, tiket, serta jawaban chatbot tetap memakai implementasi sebelumnya.
